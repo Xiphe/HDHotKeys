@@ -181,6 +181,11 @@ Echo("$this->debug();")
 Send {left 2}
 return
 
+::#h::
+Echo("$HTML->('__inner__');")
+Send {left 14}
+return
+
 
 
 ;/// JS

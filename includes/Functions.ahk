@@ -104,7 +104,8 @@ GetHotLine(n = 1, innerstrlen = 15) { ;Press {Home} n times, max length of word 
 	send ^c
 	Theclip := Clipboard
 	sleep 100
-	FoundPos := RegExMatch(Theclip, "__(\w{0,%innerstrlen%})__", found)
+	regex = __(\w{0,%innerstrlen%})__
+	FoundPos := RegExMatch(Theclip, regex, found)
 	if(FoundPos <> 0) {
 		r = %FoundPos%|%found%
 		return r

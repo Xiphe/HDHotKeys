@@ -130,6 +130,7 @@ Shorttags:
 		#e				PHP echo ;
 		#v				PHP var_dump();
 		#d				PHP $this->debug();
+		#h				PHP $HTML->('__inner__');
 
 		#co				JS console.log();
 		#al				JS alert();
