@@ -1,0 +1,154 @@
+Autohotkey compilation for webdesign and programming
+
+	-------------------------------------------------------------------------------------
+		NO WARRANTY!!
+		This Scipt is provided "as is" and does not constitute a warranty of any kind,
+		either expressed or implied. Hannes Diercks disclaims all warranties, expressed 
+		or implied. This includes but is not limited to implied warranties of 
+		merchantability, fitness for a particular purpose, and non-infringement. It also 
+		includes any expressed or implied warranties arising from any course of dealing, 
+		usage, or trade practice.
+	-------------------------------------------------------------------------------------
+		"THE BEER-WARE LICENSE" (Revision 42):
+		<xiphe@gmx.de> wrote this files. As long as you retain this notice you
+		can do whatever you want with this stuff. If we meet some day, and you think
+		this stuff is worth it, you can buy me a beer in return. Hannes Diercks
+	-------------------------------------------------------------------------------------
+
+
+
+Installation: 
+	• Download and Install Autohotkey: http://www.autohotkey.com/download/
+	• Rename Config_sample.ahk to Config.ahk and moove it as described in the File
+	• Doubleclick HDHotkeys.ahk
+
+Tested on: 
+	• Win XP 32Bit
+	• Win 7 64Bit
+
+Hints:
+	• The Config file allowes the srcipt to be portable and be used on different systems.
+	  I have the files in my dropbox and just the Config.ahk localy on my systems this
+	  allowes me to change anything in the scripts and it will be available on my other 
+	  systems as soon as dropbox has synced.
+
+Shortcuts:
+	• Programms:
+			// The Prog-Paths have to be set in Congig.ahk
+			// TODO: Easier Customisation + use function to reduce redundancy
+		Win + x				xampp
+		Win + a				Aptana
+		Win + t				Thunderbird
+		Win + f				Firefox
+		Win + n				Notepad++
+		Win + z				Filezilla
+		Win + o				Indesign
+		Win + p				Photoshop
+		Win + i				Illustrator
+
+	• Searches: (Searches.ahk)
+		These try to find a Related Tab in Firefox and use it to search on a specific website for a string
+		If a Sting is marked, it will be used otherwhise a input is opend 
+	 
+		Win + ö				Google
+		Win + ä				Wikipedia
+		Win + ü 			Leo.org
+		Win + + 			PHP.net
+		Win + # 			Wordpress.org
+
+			// It's my German key-Mapping, so i don't know what happens to the ö,ä,ü, keys, 
+			// you can rebind them in Searches.ahk
+
+	• Other: (Shortcuts.ahk)
+		Win + r				restarts the Autohotkey (usefull is s.th. is buggy or changed)
+
+		Win + 7				convert marked string to 1337 :P
+
+		AltGr + .			•
+		Win + <: 			«
+		Win + Shift + < 	»
+		AltGr + r			®
+		AltGr + y 			¥
+		AltGr + t 			™
+		AltGr + c 			©
+
+		AltGr + n 			Searches for a __foo__ in the next 5 Lines and marks it
+								(Used in PHP Documentation and Shorts)
+		AltGr + h 			deletes __ in the marked string
+
+		Win + w 			converts some special signs into web usable chars ...in the marked string
+		AltGr + 6 			converts german ä ö etc. to &auml; &ouml; ...in the marked string
+		AltGr + ä 			converts &auml; &ouml; etc. to  ä ö ...in the marked string
+		Win + 2				escapes " into \" ...in the marked string
+		AltGr + l			Counts the chars in the marked string and displays it
+		AltGr + {Down}		Converts the marked String to Lowercase
+		AltGr + {Up}		Converts the marked String to Uppercase
+		AltGr + {Right}		Converts the marked String to Titleform
+		Win + l				Trys to open a new Tab with http://localhost/ in Firefox
+
+Shorttags:
+	The following words will be replaced as discribed when you push spacebar or enter
+
+		#wpsalt				The Salt for Wordpress 
+								Example: define('AUTH_KEY', 'blah'); 
+										 [...]
+		#pw 				Example: kMZ]V/i[!Sf,"p-0
+		#pwa				Example: FUMZMizLayzZmkrF
+		#pwn				Example: 3969784734195346
+		#pwan				Example: 1104k334w19LJD2c
+		#lpw                The last generated Password
+
+		#mfg				German "mit freundlichen Grüßen" phrase, can be changed in Strings.ahk
+		#mfga				alternative
+
+		<?					PHP <?php ?>
+		#if					PHP if-clause
+		#sif				PHP short if-clause
+		#el					PHP else attach
+		#eif				PHP elseif attach
+		#fe					PHP foreach statement
+		#sw					PHP switch statement
+		#swc				PHP another switch case
+		#docc				PHP Documentation @copyright
+		#docp				PHP Documentation @param
+		#docd				PHP Documentation @date
+		#doca				PHP Documentation @author
+		#docr				PHP Documentation @return
+		#docf				PHP Documentation for Funcions
+		#doc				PHP Documentation 
+		#func				PHP a generic function
+		#pub				PHP a public function
+		#priv				PHP a private function
+		#prot				PHP a protected function
+		#t					PHP $this->;
+		#e					PHP echo ;
+		#v					PHP var_dump();
+		#d					PHP $this->debug();
+
+		#co					JS console.log();
+		#al					JS alert();
+
+				//TODO: Migrate to Strings and Use Echo()
+		#bbt				A Block Lorem Ipsum
+		#bbt2				A longer block
+		#bbt3				A even longer block
+		#bt					A string Lorem Ipsum
+		#bt2
+		#bt3
+		#p					<p>lorem Ipsum</p>
+		#p2
+		#p3
+		#ul					<ul><li>Lorem Ipsum</li></ul>
+		#ul2
+		#ul3
+		#ol
+		#ol2
+		#div				<div></div>
+		#i					 id="" 
+		#c					 class=""
+		#a					<a href="" title=""></a>
+		#img				<img src="" alt="" />
+		#desc				/*----------------------------------------- DESCRIPTION -----------------------------------------*/
+		#desc2
+
+
