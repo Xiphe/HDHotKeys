@@ -1,4 +1,4 @@
-Autohotkey compilation for webdesign and programming
+﻿Autohotkey compilation for webdesign and programming
 
 	-------------------------------------------------------------------------------------
 		NO WARRANTY!!
@@ -89,7 +89,11 @@ Shortcuts:
 		AltGr + {Down}			Converts the marked String to Lowercase
 		AltGr + {Up}			Converts the marked String to Uppercase
 		AltGr + {Right}			Converts the marked String to Titleform
-		Win + l				Trys to open a new Tab with http://localhost/ in Firefox
+		Win + h				Trys to open a new Tab with http://localhost/ in Firefox
+		Strg + {Left}			Replacement for {Home}
+		Strg + {Right}			Replacement for {End}
+		Shift + {Left}			Replacement for Shift+{Home}
+		Shift + {Right}			Replacement for Shift+{End}
 
 Shorttags:
 	The following words will be replaced as discribed when you push spacebar or enter
@@ -101,7 +105,11 @@ Shorttags:
 		#pwa				Example: FUMZMizLayzZmkrF
 		#pwn				Example: 3969784734195346
 		#pwan				Example: 1104k334w19LJD2c
-		#lpw                The last generated Password
+		#pw8				Example: a[:8kT^%
+		#pwa8				Example: IFRfzXGE
+		#pwn8				Example: 83485817
+		#pwan8				Example: MsP7JIT4
+		#lpw				The last generated Password
 
 		#mfg				German "mit freundlichen Grüßen" phrase
 							can be changed in Strings.ahk
@@ -120,17 +128,26 @@ Shorttags:
 		#docd				PHP Documentation @date
 		#doca				PHP Documentation @author
 		#docr				PHP Documentation @return
+		#docpu				PHP Documentation @access public
+		#docpro				PHP Documentation @access protected
+		#docpri				PHP Documentation @access private
 		#docf				PHP Documentation for Funcions
 		#doc				PHP Documentation 
 		#func				PHP a generic function
 		#pub				PHP a public function
 		#priv				PHP a private function
 		#prot				PHP a protected function
+		#cl					PHP a basic Class
+		#mcl				PHP a basic Extension of Masterclass for Wordpress
+		#ar				PHP array();
 		#t				PHP $this->;
 		#e				PHP echo ;
 		#v				PHP var_dump();
-		#d				PHP $this->debug();
+		#pv				PHP echo '<pre>'.var_export(__var__, true).'</pre>';
+		#td				PHP $this->debug();
 		#h				PHP $HTML->('__inner__');
+		
+		#d					debug();
 
 		#co				JS console.log();
 		#al				JS alert();

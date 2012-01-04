@@ -39,6 +39,26 @@ lpw := RandomInt()
 Echo(lpw)
 return
 
+::#pw8::	;Example: SGaECl#.
+lpw := RandomStr(8)
+Echo(lpw)
+return
+
+::#pwan8:: ;Example: M6y32916
+lpw := RandomStrAN(8)
+Echo(lpw)
+return
+
+::#pwa8:: ;Example: tZJmpwuI
+lpw := RandomStrA(8)
+Echo(lpw)
+return
+
+::#pwn8:: ;Example: 74047352
+lpw := RandomInt(8)
+Echo(lpw)
+return
+
 ::#lpw:: ;the last entered Password
 Echo(lpw)
 return
@@ -120,6 +140,18 @@ Echo(TabStr(DOC_PARAM, GetTabs(true, 2, false)))
 MarkHotString()
 return
 
+::#docpu::
+Echo(TabStr(DOC_ACCESS_PUBLIC, GetTabs(true, 2, false)))
+return
+
+::#docpro::
+Echo(TabStr(DOC_ACCESS_PROTECTED, GetTabs(true, 2, false)))
+return
+
+::#docpri::
+Echo(TabStr(DOC_ACCESS_PRIVATE, GetTabs(true, 2, false)))
+return
+
 ::#docd::
 Echo(TabStr(DOC_DATE, GetTabs(true, 2, false)))
 return
@@ -134,7 +166,7 @@ return
 
 ::#docf::
 Echo(TabStr(DOC_F, GetTabs()))
-Send {UP 6}
+Send {UP 5}
 MarkHotString()
 return
 
@@ -161,6 +193,23 @@ Send {UP 2}
 MarkHotString()
 return
 
+::#cl::
+Echo(TabStr(PHP_CLASS, GetTabs()))
+Send {UP 2}
+MarkHotString()
+return
+
+::#mcl::
+Echo(TabStr(PHP_MASTER_SUBCLASS, GetTabs()))
+Send {UP 18}
+MarkHotString()
+return
+
+::#ar::
+Echo("array();")
+Send {LEFT 2}
+return
+
 ::#t::
 Echo("$this->;")
 Send {LEFT}
@@ -176,7 +225,17 @@ Echo("var_dump();")
 Send {left 2}
 return
 
+::#pv::
+Echo(TabStr(PHP_PRE_VARDUMP, GetTabs()))
+MarkHotString()
+return
+
 ::#d::
+Echo("debug();")
+Send {left 2}
+return
+
+::#td::
 Echo("$this->debug();")
 Send {left 2}
 return

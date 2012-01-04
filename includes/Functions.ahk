@@ -257,3 +257,8 @@ TabSearch(cleanName, tabNr, tabName, url)
 	Clipboard := temp
 	temp =
 }
+
+Calculate(string) {
+	string := string
+	return string
+}

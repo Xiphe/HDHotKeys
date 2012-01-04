@@ -301,11 +301,31 @@ temp =
 Return
 }
 
+#c::
+{
+temp := ClipboardAll
+Sleep,100
+Clipboard =
+Send, ^c
+Theclip := Clipboard
+
+r := Calculate(Theclip)
+msgBox %r%
+
+Theclip =
+Clipboard := temp
+temp =
+Return
+}
+
+; 1+1
+
 ;///////////////////////////////////////// Localhost;
-#l::
+#h::
 {
 SetTitleMatchMode 2
 DetectHiddenWindows, On
+Sleep 300
 if WinExist("Mozilla Firefox") {
 	WinActivate, Mozilla Firefox
 	Sleep 100
@@ -314,6 +334,28 @@ if WinExist("Mozilla Firefox") {
 	Send http://localhost/
 	Send {Enter}
 }
+Return
+}
+
+;///////////////////////////////////////// Pos1 + End
+^Left::
+{
+Send {Home}
+Return
+}
+^Right::
+{
+Send {End}
+Return
+}
++Left::
+{
+Send +{Home}
+Return
+}
++Right::
+{
+Send +{End}
 Return
 }
 

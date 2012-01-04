@@ -29,11 +29,11 @@ DOC_SMALL =
 )
 DOC_PARAM =
 (
- * @param __type__ $__name__ __description__
+ * @param __mixed__ $__foo__ __description__
 )
 DOC_RETURN =
 (
- * @return __type__ __description__
+ * @return __void__ __description__
 )
 
 DOC_FIRST3 =
@@ -63,7 +63,6 @@ DOC_END =
 DOC_F = 
 (
 %DOC_FIRST3%
- %DOC_AUTHOR%
  %DOC_DATE%
  %DOC_END%
 )
@@ -84,19 +83,30 @@ function __name__(__vars__) {
 F_GEN =
 (
 %DOC_FIRST3%
- %DOC_AUTHOR%
  %DOC_DATE%
  %DOC_END%
 %FUNCTION%
 )
 
+DOC_ACCESS_PUBLIC =
+(
+ * @access public
+)
 
+DOC_ACCESS_PROTECTED =
+(
+ * @access protected
+)
+
+DOC_ACCESS_PRIVATE =
+(
+ * @access private
+)
 
 F_PUB =
 (
 %DOC_FIRST3%
- * @access public
- %DOC_AUTHOR%
+ %DOC_ACCESS_PUBLIC%
  %DOC_DATE%
  %DOC_END%
 public %FUNCTION%
@@ -105,8 +115,7 @@ public %FUNCTION%
 F_PRI =
 (
 %DOC_FIRST3%
- * @access private
- %DOC_AUTHOR%
+ %DOC_ACCESS_PRIVATE%
  %DOC_DATE%
  %DOC_END%
 private %FUNCTION%
@@ -115,8 +124,7 @@ private %FUNCTION%
 F_PRO =
 (
 %DOC_FIRST3%
- * @access	protected
- %DOC_AUTHOR%
+ %DOC_ACCESS_PROTECTED%
  %DOC_DATE%
  %DOC_END%
 protected %FUNCTION%
@@ -172,6 +180,39 @@ switch($__var__) {
 }
 )
 
+PHP_CLASS =
+(
+class __name__ {
+	__content__
+}
+)
 
+PHP_MASTER_SUBCLASS =
+(
+class __name__ extends __masterprefix__Master {
+	protected $requiredInitArgs = array();
+	
+	protected function init($initArgs) {
+		
+	}
+	
+	public function wpinit() {
+		
+	}
+	
+	public function hooks() {
+		
+	}
+	
+	public function admin_notices() {
+		
+	}
+}
+)
+
+PHP_PRE_VARDUMP =
+(
+echo '<pre>'.var_export(__var__, true).'</pre>';
+)
 
 

@@ -1,3 +1,17 @@
+1.0.2
+	- Added #cl for basic PHP Class
+	- Added #mcl for basic Extension of Masterclass for Wordpress
+	- Added #ar for array();
+	- Changed Localhost Win + l to Win + h (Due Win 7 Problem, not accepting overwrite of Win +l)
+	- Removed Author from default PHP Documentation
+	- Changed default type in PHP documentation to void / mixed
+	- Added #docpu, #docpro & #docpri for @access things
+	- Changed #d to debug(); and added #td for $this->debug();
+	- Added ^Left & ^Right for {Home} & {End}
+	- Added +Left & +Right for Shift{Home} & Shift{End}
+	- Added #pw8 shorttags for shorter Passwords
+	- Added #pv for <pre>var_export...
+
 1.0.1
 	- Fixed GetHotLine() Function (Not working in 1.0)
 	- Added #h for $HTML->('__inner__');
